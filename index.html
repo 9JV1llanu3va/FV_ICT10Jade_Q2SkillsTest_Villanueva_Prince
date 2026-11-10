@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test Q2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net">
+    <script type="module" src="https://pyscript.net"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body class="page-body">
+
+
+    <div class="main-container">
+        
+        <div class="header-section">
+            <h1 class="main-title">CORE ELEMENT INSIGHT</h1>
+            <p class="subtitle">Non-Metal Periodic Directory Finder</p>
+        </div>
+
+        <div class="inner-card">
+            
+            <div class="instructions-box">
+                <p class="instructions-heading">SYSTEM OVERVIEW</p>
+                <p>Input target non-metal element symbol standard sequence parameters below (e.g., H, O, Cl, Ne, Xe).</p>
+            </div>
+
+            <div class="form-group">
+                <label for="symbol-input" class="input-label">
+                    TARGET ELEMENT SYMBOL
+                </label>
+                <div class="input-wrapper">
+                    <input type="text" id="symbol-input" placeholder="Enter Atomic Code (e.g. RN)" class="text-input">
+                </div>
+            </div>
+
+            <button id="search-btn" py-click="search_element" class="submit-btn">
+                INITIALIZE QUERY MAP
+            </button>
+
+            <div class="result-box">
+                <div class="result-header">
+                    DATAFRAME TELEMETRY FEED
+                </div>
+                <div id="result-display" class="result-content">
+                    <span class="placeholder-text">Awaiting operational target signature input...</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-section">
+            <span class="footer-dot"></span> Prince Villanueva • Skills Test Q2 • 2026-2027
+        </div>
+    </div>
+
+    <script type="py" src="main.py" async></script>
+
+</body>
+</html>
